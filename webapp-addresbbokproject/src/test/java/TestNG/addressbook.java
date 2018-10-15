@@ -13,7 +13,7 @@ public class addressbook {
 	@BeforeMethod
 	public void launch() {
 		System.setProperty("webdriver.chrome.driver", 
-				   "/home/ubuntu/jenkins_slav/workspace/Selenium_testng/webapp-addresbbokproject/chromedriver.exe");
+				   "/home/ubuntu/jenkins_slav/workspace/Selenium_testng/webapp-addresbbokproject/chromedriver");
 		  driver = new ChromeDriver();
 		  driver.get("http://ec2-13-127-96-142.ap-south-1.compute.amazonaws.com:9999/addressbook");
 		  driver.manage().window().maximize();
