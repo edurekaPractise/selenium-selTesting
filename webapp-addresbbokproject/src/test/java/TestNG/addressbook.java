@@ -12,10 +12,7 @@ public class addressbook {
 	 WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver.exe");
-		  ChromeOptions options = new ChromeOptions();
-		  options.addArguments("--headless");
-   		  ChromeDriver chromeDriver = new ChromeDriver(options);
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		  driver = new ChromeDriver();
 		  driver.get("http://ec2-13-127-96-142.ap-south-1.compute.amazonaws.com:9999/addressbook");
 		  driver.manage().window().maximize();
